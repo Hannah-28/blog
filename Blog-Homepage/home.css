@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
     margin: 0;
@@ -12,17 +12,15 @@
     "art"
     "sec"
     "subs"
-    "ft"
-    ;
+    "ft";
     text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5em;
     letter-spacing: 0.1em;
-    font-family: 'Cinzel', serif
+    font-family: 'Raleway', sans-serif;
 }
 
 img {
-    width: 15em;
+    width: 18em;
     height: 15em;
 }
 
@@ -65,7 +63,7 @@ button {
 nav {
     display: flex;
     justify-content: space-between;
-    width:20em;
+    width: 20em;
     font-size: 0.7em;
 }
 
@@ -74,32 +72,32 @@ nav a {
 }
 
 nav a:hover {
-    color:#d63114
+    color: #d63114;
 }
 
-nav a::before{
-    content:'';
-    display:block;
+nav a::before {
+    content: '';
+    display: block;
     background: #000;
-    height :4px;
-    width:0%;
-    top:0px;
-    transition:all 1s ease-in-out 3ms;
+    height: 4px;
+    width: 0;
+    top: 0;
+    transition: all 1s ease-in-out 3ms;
 }
-nav a:hover::before{
-    width:100%;
+nav a:hover::before {
+    width: 100%;
 }
 
 /* Latest Posts */
 .latest-posts {
     grid-area: art;
-    padding: 4em 2em 0em 2em;
+    padding: 4em 2em 0 2em;
     margin-top: 4em;
 }
 
 .latest-posts-grid {
     display: grid;
-    grid-template-columns: 15em;
+    grid-template-columns: 18em;
     justify-content: space-around;
     grid-gap: 2em;
 }
@@ -119,21 +117,25 @@ nav a:hover::before{
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
-    padding:1em 2em;
+    padding: 1em 2em;
     margin-top: 4em;
 }
 
 .latest-posts button:hover {
     background-color: #000;
     color: #fff;
-    transition:all 1s ease-in-out 3ms;
+    transition: all 1s ease-in-out 3ms;
     cursor: pointer;
+}
+
+.latest-posts-grid a:hover {
+    text-decoration: underline;
 }
 
 /* Other Posts */
 .other-posts {
     grid-area: sec;
-    padding: 4em 2em 0em 2em;
+    padding: 4em 2em 0 2em;
     margin-top: 4em;
 }
 
@@ -155,7 +157,11 @@ nav a:hover::before{
     display: grid;
     grid-gap: 2em;
     justify-content: space-around;
-    grid-template-columns: 15em;
+    grid-template-columns: 18em;
+}
+
+.other-posts-grid a:hover {
+    text-decoration: underline;
 }
 
 .recent-posts {
@@ -174,6 +180,7 @@ nav a:hover::before{
     font-weight: 100;
     font-size: 0.6em;
 }
+
 .editors-picks {
     display: grid;
     grid-gap: 4em;
@@ -214,7 +221,7 @@ nav a:hover::before{
 .subscribe-section {
     grid-area: subs;
     background: #0000000d;
-    padding: 4em 0em 4em 0em;
+    padding: 4em 0;
     margin-top: 4em;
     text-align: center;
 }
@@ -227,37 +234,37 @@ form {
 }
 
 form input {
-    padding:1em 1em;
+    padding: 1em 1em;
 }
 
 .subscribe-section button {
-    margin: 2em 0em;
+    margin: 2em 0;
     background-color: #000;
     color: #fff;
     border: 2px solid #000;
-    padding:1em 3em;
+    padding: 1em 3em;
     margin-top: 4em;
 }
 
 .subscribe-section button:hover {
-background-color: #fff;
-color: #000;
-transition:all 1s ease-in-out 3ms;
-cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    transition: all 1s ease-in-out 3ms;
+    cursor: pointer;
 }
 
 /* Footer */
 footer {
     grid-area: ft;
     background-color: #fde8e3;
-    padding: 4em 0em;
+    padding: 4em 0;
     text-align: center;
 }
 
 .social-media-links {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 1em);
+    grid-template-columns: repeat(3, 1em);
     grid-gap: 1.5em;
     margin-bottom: 2em;
 }
@@ -274,7 +281,7 @@ footer h4 {
 }
 
 /* Media Queries for medium screens */
-@media (min-width: 641px) and (max-width: 1000px) {
+@media (min-width: 501px) and (max-width: 845px) {
     .latest-posts-grid {
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
@@ -311,18 +318,18 @@ footer h4 {
     
     .editors-picks, 
     .miscellaneous {
-        margin-top: 0em;
+        margin-top: 0;
     }
 
     .recent-posts-grid h3,
     .editors-picks-grid h3,
     .miscellaneous-grid h3 {
-        margin-top: 0em;
+        margin-top: 0;
     }
 }
 
 /*  Media Queries for medium screens */
-@media (min-width: 1001px) {
+@media (min-width: 846px) {
     img{
         width: 18em;
     }
@@ -330,6 +337,7 @@ footer h4 {
     .latest-posts-grid {
         grid-template-columns: repeat(3, 18em);
         justify-content: space-between;
+        padding: 0 5em
     }
 
     .other-posts-grid {
@@ -354,12 +362,12 @@ footer h4 {
     
     .editors-picks, 
     .miscellaneous {
-        margin-top: 0em;
+        margin-top: 0;
     }
 
     .recent-posts-grid h3,
     .editors-picks-grid h3,
     .miscellaneous-grid h3 {
-        margin-top: 0em;
+        margin-top: 0;
     }
 }
