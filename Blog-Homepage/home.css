@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
     line-height: 1.5em;
     letter-spacing: 0.1em;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -44,6 +44,7 @@ p {
 button {
     font-size: 0.5em;
 }
+
 
 /* Header */
 .header {
@@ -88,6 +89,7 @@ nav a:hover::before {
     width: 100%;
 }
 
+
 /* Latest Posts */
 .latest-posts {
     grid-area: art;
@@ -131,6 +133,7 @@ nav a:hover::before {
 .latest-posts-grid a:hover {
     text-decoration: underline;
 }
+
 
 /* Other Posts */
 .other-posts {
@@ -217,6 +220,7 @@ nav a:hover::before {
     font-size: 0.6em;
 }
 
+
 /* Subscribe */
 .subscribe-section {
     grid-area: subs;
@@ -253,6 +257,7 @@ form input {
     cursor: pointer;
 }
 
+
 /* Footer */
 footer {
     grid-area: ft;
@@ -262,16 +267,15 @@ footer {
 }
 
 .social-media-links {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(3, 1em);
-    grid-gap: 1.5em;
     margin-bottom: 2em;
 }
 
 .social-media-links img {
     width: 1em;
     height: 1.5em;
+    margin: 0 1em;
 }
 
 footer h4 {
@@ -280,24 +284,24 @@ footer h4 {
     font-size: 0.6em;
 }
 
+
 /* Media Queries for medium screens */
 @media (min-width: 501px) and (max-width: 845px) {
-    .latest-posts-grid {
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
-    }
-
-    .other-posts-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
     img{
         width: 18em;
     }
 
+
+    /* Latest Posts */
     .latest-posts-grid {
         grid-template-columns: repeat(2, 18em);
         justify-content: space-between;
+    }
+
+
+    /* Other Posts */
+    .other-posts-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .recent-posts-grid a,
@@ -328,18 +332,23 @@ footer h4 {
     }
 }
 
+
 /*  Media Queries for medium screens */
 @media (min-width: 846px) {
     img{
         width: 18em;
     }
 
+
+    /* Latest Posts */
     .latest-posts-grid {
         grid-template-columns: repeat(3, 18em);
         justify-content: space-between;
         padding: 0 5em
     }
 
+
+    /* Other Posts */
     .other-posts-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }

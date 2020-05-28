@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
 
 * {
     margin: 0;
@@ -14,13 +14,14 @@
     "ft";
     line-height: 1.5em;
     letter-spacing: 0.1em;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
 }
+
 
 /* Header */
 .header {
@@ -66,6 +67,7 @@ nav a:hover::before {
     width: 100%;
 }
 
+
 /* Heading & Autthor's Information */
 section {
     grid-area: sec;
@@ -101,6 +103,7 @@ section h1 {
 .section-grid div {
     grid-area: div;
 }
+
 
 /* Article */
 article {
@@ -147,6 +150,7 @@ blockquote {
     font-style: italic;    
 }
 
+
 /* Footer */
 #footer {
     grid-area: ft;
@@ -157,16 +161,15 @@ blockquote {
 }
 
 .social-media-links {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(3, 1em);
-    grid-gap: 1.5em;
     margin-bottom: 2em;
 }
 
 .social-media-links img {
     width: 1em;
     height: 1.5em;
+    margin: 0 1em;
 }
 
 #footer h4 {
@@ -175,8 +178,10 @@ blockquote {
     font-size: 0.6em;
 }
 
+
 /* Media Queries for medium screens */
 @media (min-width: 901px) and (max-width: 1200px) {
+    /* Article */
     article {
         grid-template-columns: 20em auto;
         grid-gap: 3em;
@@ -195,6 +200,7 @@ blockquote {
 
 /* Media Queries for large screens */
 @media (min-width: 1201px) {
+    /* Article */
     article {
         grid-template-columns: 22em auto;
         grid-gap: 3em;
