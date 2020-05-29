@@ -41,7 +41,10 @@ figcaption {
 blockquote {
     border-left: 3px solid #cfd8dc;
     padding-left: 2em;
-    font-style: italic;    
+}
+
+blockquote footer {
+    margin-bottom: 2em;
 }
 
 
