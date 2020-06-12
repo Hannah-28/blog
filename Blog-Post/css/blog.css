@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
-@import url(../css/header.css);
-@import url(../css/author-info.css);
-@import url(../css/article.css);
-@import url(../css/footer.css);
+@import url(./header.css);
+@import url(./author-info.css);
+@import url(./article.css);
+@import url(./footer.css);
 
 * {
     margin: 0;
